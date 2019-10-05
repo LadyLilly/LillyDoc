@@ -9,7 +9,7 @@ class Lilly {
     /**
      * Init the Lilly class
      */
-    init() {
+    public init(): void {
         console.log('Initializing LillyJS');
     }
 }
