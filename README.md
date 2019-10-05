@@ -4,6 +4,12 @@ Documentation about Lilly.
 
 ## This documentation contains all informations about the Framework "Lilly.js"
 
+### Compile TypeScript
+```bash
+# Compile TyeScript with NPM (Webpack)
+npm run build
+```
+
 ### Initiate
 ```javascript
 // Require Lilly
