@@ -10,7 +10,7 @@ Documentation about Lilly.
 const Lilly = require('lilly');
 
 // Create app
-const app = Lilly();
+const app = Lilly.init();
 ```
 
 ### Routing
