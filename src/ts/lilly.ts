@@ -1,9 +1,13 @@
+import { LillyOptions } from "./interfaces/lillyOptions";
+
 /**
  * The main Lilly class
  */
 class Lilly {
-    constructor() {
+    private options: LillyOptions;
 
+    constructor(options: LillyOptions) {
+        this.options = options;
     }
 
     /**
@@ -11,5 +15,24 @@ class Lilly {
      */
     public init(): void {
         console.log('Initializing LillyJS');
+    }
+
+    /**
+     * Handles all keyboard events
+     */
+    private keyHandler(): void {
+        console.log('Keyhandler');
+    }
+
+    /**
+     * Append items to list
+     *
+     * @param users
+     */
+    private appendItems(users: any): void {
+        console.log('AppendItems');
+        users.forEach((user: any) => {
+            console.log('ForEachUser');
+        });
     }
 }
