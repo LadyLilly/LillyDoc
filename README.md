@@ -41,3 +41,12 @@ app.delete('/', (req, res) => {
     res.send('DELETE request');
 });
 ```
+
+### Internal functions
+```javascript
+// Handles all user inputs regarding this library
+private keyHandler(e: KeyboardEvent) { }
+
+// Appends all returned items to lis
+private appendItems(user: any) { }
+```
