@@ -19,8 +19,9 @@ class Lilly {
 
     /**
      * Handles all keyboard events
+     * @param e - Keyboard event
      */
-    private keyHandler(): void {
+    private keyHandler(e: KeyboardEvent): void {
         console.log('Keyhandler');
     }
 
@@ -33,6 +34,9 @@ class Lilly {
         console.log('AppendItems');
         users.forEach((user: any) => {
             console.log('ForEachUser');
+            const li = document.createElement('LI');
+            li.classList.add('ac-item');
+            li.innerHTML = `${user.firstName} ${user.lastName}`;
         });
     }
 }
